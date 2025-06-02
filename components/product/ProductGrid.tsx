@@ -3,7 +3,8 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { collection, getDocs, query, where } from 'firebase/firestore'
-import { db } from '@/firebase/firebase'
+// เปลี่ยนจาก '@/firebase/firebase' เป็น '../../firebase/firebase'
+import { db } from '../../firebase/firebase'
 
 /*
 File: /components/product/ProductGrid.tsx

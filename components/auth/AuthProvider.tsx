@@ -2,12 +2,13 @@
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react'
 import { onAuthStateChanged, User as FirebaseUser } from 'firebase/auth'
 import { doc, getDoc } from 'firebase/firestore'
-import { auth, db } from '@/firebase/firebase'
+// เปลี่ยน import alias '@/firebase/firebase' เป็น '../../firebase/firebase'
+import { auth, db } from '../../firebase/firebase'
 
 /*
   File: /components/auth/AuthProvider.tsx
-  Version: 1.0 | 2025-06-01
-  Note: AuthContext สำหรับเก็บข้อมูล user + role, ใช้กับ RBAC (system-admin, marketplace-admin, vendor, partner, user)
+  Revision: 1.1 | 2025-06-02
+  Note: เปลี่ยน import alias "@/firebase/firebase" เป็น relative path, production-ready
 */
 
 interface UserProfile {

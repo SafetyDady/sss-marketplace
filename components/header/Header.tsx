@@ -1,12 +1,13 @@
 'use client'
 
 import { useState } from 'react'
-import UserMenu from '@/components/header/UserMenu'
+// เปลี่ยน import UserMenu จาก '@/components/header/UserMenu' เป็น '../../components/header/UserMenu'
+import UserMenu from '../../components/header/UserMenu'
 
 /*
   File: /components/header/Header.tsx
-  Version: 2.1 | 2025-06-01
-  Note: ตัดปุ่มคูปองออกจาก header (คงเมนูอื่นและ UserMenu profile dropdown ไว้ครบ)
+  Revision: 2.2 | 2025-06-02
+  Note: เปลี่ยน import UserMenu เป็น relative path, ตัดปุ่มคูปอง, production-ready
 */
 
 const popularSearches = [

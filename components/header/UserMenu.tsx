@@ -1,14 +1,14 @@
 'use client'
-import { useAuth } from '@/components/auth/AuthProvider'
+import { useAuth } from '../../components/auth/AuthProvider'
 import { signOut } from 'firebase/auth'
-import { auth } from '@/firebase/firebase'
+import { auth } from '../../firebase/firebase'
 import { useRouter } from 'next/navigation'
 import { useRef, useState, useEffect } from 'react'
 
 /*
   File: /components/header/UserMenu.tsx
-  Version: 2.0 | 2025-06-01
-  Note: Responsive Profile Dropdown + Sign Out (Production-ready)
+  Revision: 2.1 | 2025-06-02
+  Note: เปลี่ยน import alias "@/..." เป็น relative path, production-ready
 */
 
 export default function UserMenu() {
