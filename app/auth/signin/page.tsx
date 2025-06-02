@@ -2,7 +2,8 @@
 import { useState } from 'react'
 import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, FacebookAuthProvider } from 'firebase/auth'
 import { useRouter } from 'next/navigation'
-import { auth, db } from '@/firebase/firebase'
+// เปลี่ยนจาก '@/firebase/firebase' เป็น relative path '../../../firebase/firebase'
+import { auth, db } from '../../../firebase/firebase'
 import { doc, getDoc, setDoc } from 'firebase/firestore'
 
 /*

@@ -3,8 +3,10 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
 import { doc, getDoc } from 'firebase/firestore'
-import { db } from '@/firebase/firebase'
-import ProductGrid from '@/components/product/ProductGrid'
+// เปลี่ยน import alias '@/firebase/firebase' → relative path '../../../firebase/firebase'
+import { db } from '../../../firebase/firebase'
+// เปลี่ยน import alias '@/components/product/ProductGrid' → relative path '../../../components/product/ProductGrid'
+import ProductGrid from '../../../components/product/ProductGrid'
 
 /*
   File: /app/product/[id]/page.tsx

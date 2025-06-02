@@ -3,7 +3,8 @@ import { useState } from 'react'
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { doc, setDoc } from 'firebase/firestore'
 import { useRouter } from 'next/navigation'
-import { auth, db } from '@/firebase/firebase'
+// เปลี่ยนจาก '@/firebase/firebase' เป็น '../../../firebase/firebase'
+import { auth, db } from '../../../firebase/firebase'
 
 /*
   File: /app/auth/signup/page.tsx
