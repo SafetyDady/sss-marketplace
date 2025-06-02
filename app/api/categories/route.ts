@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { db } from "@/utils/firebaseAdmin"; // ใช้ Firestore Admin SDK
+// เปลี่ยน import alias "@/utils/firebaseAdmin" เป็น "../../utils/firebaseAdmin"
+import { db } from "../../utils/firebaseAdmin"; // ใช้ Firestore Admin SDK
 
 export async function GET() {
   const snapshot = await db.collection("categories").get();

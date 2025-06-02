@@ -1,6 +1,7 @@
 // app/admin/layout.tsx
 
-import AdminHeader from "@/components/admin/layout/AdminHeader";
+// เปลี่ยน import AdminHeader จาก "@/components/admin/layout/AdminHeader" เป็น "../../components/admin/layout/AdminHeader"
+import AdminHeader from "../../components/admin/layout/AdminHeader";
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -10,4 +11,3 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     </div>
   );
 }
-
